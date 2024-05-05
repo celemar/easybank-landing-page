@@ -33,6 +33,15 @@ function App() {
 
   const { features } = data.section2;
   const { articles } = data;
+  
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.body.classList.remove("resize-animation-stopper");
+    }, 400);
+  });
 
   return (
     <div>
@@ -128,12 +137,13 @@ function App() {
             {mediaIcons.map((icon, index) => (
               <div
                 key={index}
-                tabIndex={0} 
+                tabIndex={0}
                 role="button"
                 dangerouslySetInnerHTML={{ __html: icon }}
                 className="media-icon"
               />
-            ))}<span className="sr-only">{icon}</span>
+            ))}
+            <span className="sr-only">{icon}</span>
           </div>
         </div>
 
