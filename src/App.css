@@ -694,8 +694,8 @@ footer a {
     margin-right: unset;
   }
 
-  footer {
-    gap: 10em;
+  .articles-container {
+    padding-right: 2em;
   }
 
   .left-container {
@@ -705,6 +705,11 @@ footer a {
   .hidden {
     margin-right: 6vw;
   }
+
+  .att-wrapper {
+    margin-right: 9vw;
+  }
+  
 }
 @media (min-width: 1440px) {
   .hidden {
