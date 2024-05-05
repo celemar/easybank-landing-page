@@ -33,7 +33,7 @@ function App() {
 
   const { features } = data.section2;
   const { articles } = data;
-  
+
   let resizeTimer;
   window.addEventListener("resize", () => {
     document.body.classList.add("resize-animation-stopper");
@@ -143,7 +143,6 @@ function App() {
                 className="media-icon"
               />
             ))}
-            <span className="sr-only">{icon}</span>
           </div>
         </div>
 
