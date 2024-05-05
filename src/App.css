@@ -176,7 +176,7 @@ main {
   overflow: hidden;
   height: 300px;
 
-  background-image: url('assets/bg-intro-mobile.svg');
+  background-image: url("assets/bg-intro-mobile.svg");
   background-size: 110%;
 
   background-position: top 70% left 20%;
@@ -477,7 +477,7 @@ footer a {
     overflow-y: visible;
     background-size: cover;
     margin-bottom: 0em;
-    background-image: url('assets/bg-intro-desktop.svg');
+    background-image: url("assets/bg-intro-desktop.svg");
     background-size: 160%;
     background-repeat: no-repeat;
     background-position: top 50% left 10%;
@@ -486,7 +486,6 @@ footer a {
   .overlay-image {
     top: 7%;
     right: -18%;
-    scale: 1.2;
   }
 
   .section2 {
@@ -611,15 +610,16 @@ footer a {
 
   .section-details > h1 {
     font-size: 3.25rem;
+    line-height: normal;
   }
 
   .section-details > p {
     font-size: 1.2rem;
+    max-width: 42ch;
   }
 
   .overlay-image {
     top: -5%;
-    scale: 1.2;
   }
 
   .section2 h2 {
@@ -649,6 +649,7 @@ footer a {
 
   .article-details h3 {
     font-size: 1.2rem;
+    line-height: normal;
   }
 
   .article-details p:last-child {
@@ -673,8 +674,7 @@ footer a {
 
 @media (min-width: 1224px) {
   .overlay-image {
-    top: -20%;
-    scale: 1;
+    top: -17%;
   }
 
   .features div:last-child {
@@ -683,6 +683,15 @@ footer a {
 
   footer {
     gap: 10em;
+  }
+
+  .hidden {
+    margin-right: 6em;
+  }
+}
+@media (min-width: 1440px) {
+  .hidden {
+    margin-right: 8em;
   }
 }
 
