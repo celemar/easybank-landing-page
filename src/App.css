@@ -703,7 +703,7 @@ footer a {
   }
 
   .hidden {
-    margin-right: 6em;
+    margin-right: 6vw;
   }
 }
 @media (min-width: 1440px) {
