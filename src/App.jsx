@@ -139,6 +139,7 @@ function App() {
                 <div
                   key={index}
                   tabIndex={0}
+                  aria-label="social media"
                   role="button"
                   dangerouslySetInnerHTML={{ __html: icon }}
                   className="media-icon"
