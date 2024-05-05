@@ -659,6 +659,7 @@ footer a {
     padding-left: var(--padding-left);
     justify-content: space-around;
     align-items: center;
+    gap: 4em;
   }
 
   .footer-wrapper {
@@ -678,6 +679,10 @@ footer a {
 
   .features div:last-child {
     margin-right: unset;
+  }
+
+  footer {
+    gap: 10em;
   }
 }
 
